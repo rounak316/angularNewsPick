@@ -1,0 +1,41 @@
+.gallery-list
+{
+    overflow: auto;
+    /*max-height: 100px;*/
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+#main-frame-heading
+{
+     font-size: 1.7em;
+     /*background: white;*/
+     color: #b8babc;
+}
+
+#media-frame-img
+{
+    width: 100%;
+}
+
+.horiz-list
+{
+    clear: both;
+  display: block;
+  content: "";
+}
+
+.horiz-list-item
+{
+    float: left;
+}
+
+.item-list-image
+{
+       border-radius: 50%;
+
+    
+}

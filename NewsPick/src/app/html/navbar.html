@@ -1,0 +1,121 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+
+<!--PlayGround-->
+
+
+<div *ngFor='let item of menuHeaders;'>
+
+<div *ngIf="item.type == 'logo'; then logo"></div>
+
+<div *ngIf="item.type == 'items'; then items"></div>
+
+
+
+
+
+
+
+
+
+
+
+<!--Templates-->
+
+<ng-template #logo>
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">logo.text</a>
+    </div>
+
+</ng-template>
+
+
+<ng-template #items>
+
+
+
+<ul class="nav navbar-nav">
+
+
+  <!--<li *ngFor="let item of item  " class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+       
+
+
+  <li *ngFor=" let _item of item.items; let active='_item.state'"  class="{{_item.state}}"  ><a href="#">
+      
+   
+
+ <div *ngIf="_item.type == 'dropdown'; then dropdown ; else tab"></div>
+
+       <span class="sr-only">(current)</span></a>
+       
+
+        <ng-template #tab>
+
+   {{_item.text}}  
+        </ng-template>
+       
+       <ng-template #dropdown>
+
+  <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+         
+             <ul class="dropdown-menu">
+
+
+     <li  *ngFor=" let __item of _item.items; let active='__item.state'">
+         <a href="#">Action</a></li>
+                          
+     
+
+
+          </ul>
+
+        </li>
+
+
+
+</ng-template>
+       
+       </li>
+      
+
+    
+
+       
+      
+</ul>
+    
+</ng-template>
+
+
+
+</div>
+
+
+
+
+<!--PlayGround-->
+
+
+
+
+
+
+
+
+
+
+
+
+  </div><!-- /.container-fluid -->
+</nav>
