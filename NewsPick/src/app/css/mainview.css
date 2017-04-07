@@ -19,6 +19,14 @@
 .baseFrame
 {
 padding: 20px;
-background: #000000;
+/*background: #000000;*/
 
+}
+
+.baseFrame
+{
+
+    border:  1px solid;
+    margin: 2px;
+     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
 }

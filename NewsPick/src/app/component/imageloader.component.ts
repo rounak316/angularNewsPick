@@ -22,8 +22,8 @@ animations: [
     'animation-timing-function': 'linear',
     // 'background': '#f6f7f8',
     'background': 'linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%)',
-    'background-size': '800px 104px',
-    'height': '96px',
+    // 'background-size': '800px 104px',
+    // 'height': '96px',
     'position': 'relative',
 
       // 'background-position' : '100% 0'
@@ -38,8 +38,8 @@ animations: [
     'animation-timing-function': 'linear',
     // 'background': '#f6f7f8',
     'background': 'linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%)',
-    'background-size': '800px 104px',
-    'height': '96px',
+    // 'background-size': '800px 104px',
+    // 'height': '96px',
     'position': 'relative',
 
       // 'background-position' : '100% 0'
@@ -54,8 +54,8 @@ animations: [
     'animation-timing-function': 'linear',
     // 'background': '#f6f7f8',
     'background': 'linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%)',
-    'background-size': '800px 104px',
-    'height': '96px',
+    // 'background-size': '800px 104px',
+    // 'height': '96px',
     'position': 'relative',
 
       // 'background-position' : '100% 0'

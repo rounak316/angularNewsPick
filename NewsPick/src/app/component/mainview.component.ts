@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , AfterViewChecked, ElementRef, ViewChild } from '@angular/core';
 
 
 @Component({
@@ -11,5 +11,28 @@ import { Component, OnInit } from '@angular/core';
 export class MainView implements OnInit {
     constructor() { }
 
-    ngOnInit() { }
+   ngOnInit() { 
+        this.scrollToBottom();
+    }
+
+    ngAfterViewChecked() {        
+        this.scrollToBottom();        
+    } 
+
+    scrollToBottom(): void {
+
+
+console.log( this.myScrollContainer.nativeElement)
+        try {
+            this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
+      
+console.log('scrollToBottom' )    
+console.log( this.myScrollContainer.nativeElement.scrollTop)
+  } catch(err) { 
+
+console.log('scrollToBottom err' , err)
+        }                 
+    }
+
+     @ViewChild('scrollMe') private myScrollContainer: ElementRef;
 }

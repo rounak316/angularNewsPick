@@ -1,14 +1,26 @@
 .timeline-item {
-    background: #fff;
+    /*background: #fff;*/
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
     border-radius: 3px;
     padding: 12px;
 
     margin: 0 auto;
-    max-width: 472px;
-    min-height: 200px;
+    /*padding: 5px;*/
+    width: 100%;
+    height:100%;
+
+    position: absolute;
+
 }
+
+
+.timeline-wrapper
+{
+
+    height: 100%;
+}
+
 
 @keyframes placeHolderShimmer{
     0%{
@@ -20,15 +32,39 @@
 }
 
 
-/*.animated-background {
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: placeHolderShimmer;
-    animation-timing-function: linear;
-    background: #f6f7f8;
-    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
-    background-size: 800px 104px;
-    height: 96px;
+.animated-background {
+  /*background-size: 800px 104px;*/
+    height: 100%;
     position: relative;
-}*/
+}
+
+.loading-text-main
+{
+    text-overflow: ellipsis;
+      white-space: nowrap; 
+    height: 2.0em;
+    overflow: hidden;
+     max-height: 2.0em;
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+/*background: #000000;*/
+
+  border: 1px solid;
+    
+}
+
+.loading-text-sub
+{
+      border: 1px solid;
+    text-overflow: ellipsis;
+      white-space: nowrap; 
+      max-width: 100%;
+        overflow: hidden;
+    height: 1.3em;
+      max-height: 1.3em;
+    position: absolute;
+    bottom: 2.2em;
+/*background: #000000;*/
+    
+}
